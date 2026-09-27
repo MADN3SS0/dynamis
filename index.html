@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>DYNAMIS — DDU G1</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav>
+  <div class="brand">DYNAMIS</div>
+  <div class="links"><a href="#produto">DDU G1</a><a href="#features">DESTAQUES</a><a href="#specs">SPECS</a><a href="#personalizar">COMPRAR</a></div>
+</nav>
+
+<header class="hero" id="produto">
+ <div>
+  <div class="tag">SIM RACING / DIRECT DRIVE</div>
+  <h1>DDU <em>G1</em></h1>
+  <p class="lead">Tecnologia Direct Drive acessível. O DYNAMIS DDU G1 foi pensado para levar uma experiência mais precisa e imersiva ao teu cockpit sem o preço habitual do mercado.</p>
+  <a class="btn" href="#personalizar">PERSONALIZAR</a>
+  <div class="stats">
+   <div><strong>~€100</strong><small>Preço alvo</small></div>
+   <div><strong>DD</strong><small>Direct Drive</small></div>
+   <div><strong>G1</strong><small>1ª geração</small></div>
+  </div>
+ </div>
+ <div class="product">
+  <div class="viewer3d hero-viewer" id="hero-viewer3d">
+   <div class="loading3d" id="hero-loading3d">A CARREGAR MODELO…</div>
+   <div class="drag-hint" id="hero-hint"><svg viewBox="0 0 24 24"><path d="M8 9l-4 3 4 3M16 9l4 3-4 3M12 4v16"/></svg><span>ARRASTA PARA RODAR</span></div>
+  </div>
+ </div>
+</header>
+
+<section id="features">
+ <div class="kicker">DYNAMIS DDU G1</div><h2 class="title">SIM RACING, SEM EXAGEROS.</h2>
+ <p class="sub">Um produto compacto e moderno, criado para quem quer entrar no mundo do Direct Drive com um preço muito mais acessível.</p>
+ <div class="grid">
+  <div class="card"><div class="num">01</div><h3>Feedback preciso</h3><p>Sente melhor a direção, os kerbs e as mudanças de aderência durante a condução.</p></div>
+  <div class="card"><div class="num">02</div><h3>Design compacto</h3><p>Visual minimalista em preto, branco e cinza para combinar com qualquer cockpit.</p></div>
+  <div class="card"><div class="num">03</div><h3>Preço acessível</h3><p>Uma proposta DYNAMIS com preço alvo próximo dos 100 €, abaixo do habitual para este tipo de equipamento.</p></div>
+ </div>
+</section>
+
+<section id="specs">
+ <div class="kicker">TECH</div><h2 class="title">ESPECIFICAÇÕES</h2><p class="sub">Os valores abaixo são a configuração de conceito do DDU G1 e podem ser ajustados quando definires o hardware final.</p>
+ <div class="tech">
+  <div class="table">
+   <div class="row"><span>Produto</span><strong>DYNAMIS DDU G1</strong></div>
+   <div class="row"><span>Categoria</span><strong>Direct Drive</strong></div>
+   <div class="row"><span>Geração</span><strong>G1</strong></div>
+   <div class="row"><span>Preço alvo</span><strong>≈ €100</strong></div>
+  </div>
+  <div class="table">
+   <div class="row"><span>Acabamento</span><strong>Preto / Cinza</strong></div>
+   <div class="row"><span>Formato</span><strong>Compacto</strong></div>
+   <div class="row"><span>Uso</span><strong>Sim Racing</strong></div>
+   <div class="row"><span>Marca</span><strong>DYNAMIS</strong></div>
+  </div>
+ </div>
+</section>
+
+<section id="personalizar">
+ <div class="kicker">CONFIGURA O TEU</div><h2 class="title">PERSONALIZAR</h2>
+ <p class="sub">Roda o modelo 3D real do DDU G1 com o rato e escolhe o acabamento. Por agora só temos as opções base — mais variações chegam com a versão final.</p>
+ <div class="viewer3d" id="viewer3d">
+  <div class="viewer-label">360° · MODELO 3D</div>
+  <div class="loading3d" id="loading3d">A CARREGAR MODELO…</div>
+  <div class="drag-hint" id="config-hint"><svg viewBox="0 0 24 24"><path d="M8 9l-4 3 4 3M16 9l4 3-4 3M12 4v16"/></svg><span>ARRASTA PARA RODAR</span></div>
+ </div>
+ <div class="opts">
+  <div>
+   <div class="opt-group">
+    <div class="opt-label">ACABAMENTO</div>
+    <div class="swatches" id="finish-swatches">
+     <div class="swatch active" data-value="Normal" data-price="0"><div class="dot" style="background:#3a3a3a"></div><span>Normal</span></div>
+     <div class="swatch" data-value="Holográfico" data-price="1"><div class="dot" style="background:linear-gradient(135deg,#9fe9d8,#b9a3ff,#ffe29a)"></div><span>Holográfico<em>+€1</em></span></div>
+     <div class="swatch" data-value="Fibra de Carbono" data-price="5"><div class="dot" style="background:repeating-linear-gradient(45deg,#0c0c0c,#0c0c0c 2px,#232323 2px,#232323 4px)"></div><span>Fibra de Carbono<em>+€5</em></span></div>
+    </div>
+   </div>
+   <div class="opt-group">
+    <div class="opt-label">BUZZER</div>
+    <div class="swatches" id="buzzer-swatches">
+     <div class="swatch active" data-value="Sem Buzzer" data-price="0"><div class="dot" style="background:#3a3a3a"></div><span>Sem Buzzer</span></div>
+     <div class="swatch" data-value="Com Buzzer" data-price="3"><div class="dot" style="background:#888"></div><span>Com Buzzer<em>+€3</em></span></div>
+    </div>
+   </div>
+  </div>
+  <div class="summary">
+   <div class="row"><span>Modelo</span><span id="sum-model">DYNAMIS DDU G1</span></div>
+   <div class="row"><span>Acabamento</span><span id="sum-finish">Normal</span></div>
+   <div class="row"><span>Buzzer</span><span id="sum-buzzer">Sem Buzzer</span></div>
+   <div class="row"><span>Preço estimado</span><span id="sum-price">≈ €100</span></div>
+   <a class="btn" href="#comprar" style="display:block;text-align:center;margin-top:22px">CONTINUAR</a>
+  </div>
+ </div>
+</section>
+
+<section id="comprar">
+ <div class="pricebox">
+  <div class="kicker">DYNAMIS DDU G1</div><h2 class="title">ENTRA NA PISTA.</h2>
+  <div class="price" id="final-price">≈ €100</div>
+  <p class="note">Preço indicativo / conceito. Especificações e preço final dependem da versão de produção.</p>
+  <button class="btn" id="buy-btn">QUERO O DDU G1</button>
+ </div>
+</section>
+
+<div class="checkout-overlay" id="checkoutOverlay">
+ <div class="checkout-box">
+  <button class="checkout-close" id="checkoutClose">&#10005;</button>
+  <h1>Finalizar compra</h1>
+  <p class="muted">DYNAMIS DDU G1 — a tua configuração</p>
+
+  <div class="co-step" id="co-account-step">
+   <h2><span class="badge">1</span>Criar conta</h2>
+   <label>Nome</label><input type="text" id="co-name" placeholder="O teu nome">
+   <label>Email</label><input type="email" id="co-email" placeholder="email@exemplo.com">
+   <label>Password</label><input type="password" id="co-pass" placeholder="••••••••">
+   <button class="btn" id="co-account-btn">Criar conta e continuar</button>
+   <div class="co-msg err" id="co-account-msg" style="display:none">Preenche nome, email e password.</div>
+  </div>
+
+  <div class="co-step co-locked" id="co-address-step">
+   <h2><span class="badge">2</span>Morada de envio</h2>
+   <label>Morada</label><input type="text" id="co-addr" placeholder="Rua, número, andar">
+   <label>Código Postal</label><input type="text" id="co-cp" placeholder="0000-000">
+   <label>Cidade</label><input type="text" id="co-city" placeholder="Cidade">
+   <label>País</label><input type="text" id="co-country" placeholder="Portugal" value="Portugal">
+   <label>Telemóvel</label><input type="text" id="co-phone" placeholder="9xxxxxxxx">
+  </div>
+
+  <div class="co-step co-locked" id="co-payment-step">
+   <h2><span class="badge">3</span>Método de pagamento</h2>
+   <label class="pay-option selected">
+    <input type="radio" name="co-pay" checked>
+    <span class="card-icon visa">VISA</span>
+    <span>Cartão •••• 4242</span>
+   </label>
+   <label class="pay-option">
+    <input type="radio" name="co-pay">
+    <span class="card-icon mc"><i></i><i></i></span>
+    <span>Cartão •••• 8891 (Mastercard)</span>
+   </label>
+   <label class="pay-option">
+    <input type="radio" name="co-pay">
+    <span class="card-icon mbway">MB</span>
+    <span>MB WAY — 9•• ••• 123</span>
+   </label>
+   <label class="pay-option">
+    <input type="radio" name="co-pay">
+    <span class="card-icon paypal">PP</span>
+    <span>PayPal — conta ligada</span>
+   </label>
+  </div>
+
+  <div class="co-step co-locked" id="co-summary-step">
+   <h2><span class="badge">4</span>Resumo</h2>
+   <div class="row"><span>Produto</span><span id="co-sum-model">DYNAMIS DDU G1</span></div>
+   <div class="row"><span>Acabamento</span><span id="co-sum-finish">Normal</span></div>
+   <div class="row"><span>Buzzer</span><span id="co-sum-buzzer">Sem Buzzer</span></div>
+   <div class="row"><span>Subtotal</span><span id="co-subtotal">€100</span></div>
+   <div class="row" id="co-discount-row" style="display:none"><span>Desconto (DDUG1)</span><span id="co-discount">-€0</span></div>
+   <div class="row"><strong>Total</strong><strong id="co-total">€100</strong></div>
+   <div class="discount-row">
+    <input type="text" id="co-code" placeholder="Código de desconto">
+    <button id="co-apply-code">Aplicar</button>
+   </div>
+   <div class="co-msg" id="co-code-msg"></div>
+   <button class="btn" id="co-finish-btn" style="width:100%">Finalizar compra</button>
+  </div>
+
+  <p class="fine">Ambiente de demonstração — nenhum pagamento real é processado.</p>
+
+  <div class="co-confirm" id="co-confirm">
+   <h1>Encomenda confirmada</h1>
+   <p class="muted">Obrigado pela tua compra! (Demonstração — nenhum valor foi cobrado.)</p>
+  </div>
+ </div>
+</div>
+
+<footer><div>© 2026 DYNAMIS</div><div>DDU G1 • SIM RACING HARDWARE</div></footer>
+
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/MTLLoader.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/OBJLoader.js"></script>
+
+<script src="script.js"></script>
+</body>
+</html>
