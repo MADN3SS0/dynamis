@@ -1,4 +1,4 @@
-![description](https://github.com/MADN3SS0/dynamis/blob/1435e26e9ce5a0990f660a6582a5fe5a4a9a0e55/image_4b024ce3-removebg-preview.png)
+![description](https://github.com/MADN3SS0/dynamis/blob/e2f1432cb124a5ade3eef7e26b16bc14dc988c76/image_4b024ce3-removebg-preview.png)
 
 Welcome to the official website of DYNAMIS. 
 
